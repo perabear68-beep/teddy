@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Pony";
+  src: url("./assets/fonts/Pony.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ComicNeue";
+  src: url("./assets/fonts/ComicNeue-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpicyRice";
+  src: url("./assets/fonts/SpicyRice-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bada";
+  src: url("./assets/fonts/BADABB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HeyComic";
+  src: url("./assets/fonts/Hey Comic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Pony", sans-serif;
+}
+
+.text-comic {
+  font-family: "ComicNeue", sans-serif;
+}
+
+.text-hey-comic {
+  font-family: "HeyComic", sans-serif;
+}
+
+.text-spicy-white {
+  font-family: "SpicyRice", sans-serif;
+  color: #4B2D00;
+  text-shadow: 3px 3px 0 #fff, -3px -3px 0 #fff, 3px -3px 0 #fff,
+    -3px 3px 0 #fff, 0 3px 0 #fff, 3px 0 0 #fff, 0 -3px 0 #fff, -3px 0 0 #fff;
+}
+
+.text-spicy-black {
+  font-family: "SpicyRice", sans-serif;
+  color: #FFE500;
+  font-weight: bold;
+  text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000,
+    -3px 3px 0 #000, 0 3px 0 #000, 3px 0 0 #000, 0 -3px 0 #000, -3px 0 0 #000;
+}
+
+.text-spicy-black-large {
+  font-family: "SpicyRice", sans-serif;
+  color: #FFE500;
+  font-weight: bold;
+  text-shadow: 5px 5px 0 #000, -5px -5px 0 #000, 5px -5px 0 #000,
+    -5px 5px 0 #000, 0 5px 0 #000, 5px 0 0 #000, 0 -5px 0 #000, -5px 0 0 #000;
+}
+
+.text-spicy-black-white-large {
+  font-family: "SpicyRice", sans-serif;
+  color: #fff;
+  text-shadow: 6px 6px 0 #000, -6px -6px 0 #000, 6px -6px 0 #000,
+    -6px 6px 0 #000, 0 6px 0 #000, 6px 0 0 #000, 0 -6px 0 #000, -6px 0 0 #000;
+}
+
+.text-bada {
+  font-family: "Bada", sans-serif;
+}

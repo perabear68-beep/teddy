@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.main-img {
+  background: url("../public/bg-2.gif") no-repeat center center;
+  /* min-height: 1000px; */
+  background-size: cover;
+  .teddy-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 42px;
+  }
+  @media screen and (max-width: 768px) {
+    /* min-height: 500px; */
+  }
+}
+
+@media (min-width: 768px) { 
+  .main-img { 
+    min-height: 1000px;
+  }
+  .header-custom-hover:hover {
+    font-family: "SpicyRice", sans-serif;
+    color: #fecd3d;
+    font-size: 28px;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff,
+      -2px 2px 0 #fff, 0 2px 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, -2px 0 0 #fff;
+  }
+  .tool-custom-hover {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .tool-custom-hover:hover {
+    color: #fef08a;
+    border-width: 4px;
+    font-size: 18px;
+  }
+  
+  @keyframes slideUpDown {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .hover-slideDown {
+    transform-origin: top;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+  
+  .hover-slideDown:hover {
+    animation: slideUpDown 0.5s ease-in-out;
+    animation-play-state: running;
+    cursor: pointer;
+  }
+  
+}
+
+.custom-buynow-btn {
+  button {
+    display: inline-block;
+    border-radius: 4px;
+    border: 5px solid #a16207;
+    background-color: #dd8b37;
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 0;
+    padding-top: 12px;
+    font-size: 26px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  button span:after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+  }
+
+  button:hover span {
+    padding-right: 35px;
+  }
+
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.custom-buynow-bottom-btn {
+  button {
+    border-radius: 0.8rem;
+  }
+}
+
+
+/* Custom scroll bar works on FireFox */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F4CE08;
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #F4CE08 transparent;
+}
+
+/* Custom scroll bar works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #F4CE08;
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
